@@ -1,0 +1,40 @@
+package com.newfarm.youtubeapp2.remote.common
+
+
+const val BASE_URL = "https://www.googleapis.com/youtube/v3/"
+
+const val YOUTUBE_APIKEY = "AIzaSyBNsIdZ7tE_DlJoo3fQTXO437Pgxi6CXKA"
+
+const val FUNCTION_SEARCH_YOUTUBE = "search?"
+const val FUNCTION_VIDEO_YOUTUBE = "videos?"
+const val FUNCTION_PLAYLIST_ITEMS_YOUTUBE = "playlistItems?"
+const val PARAM_KEY_YOUTUBE = "key="
+const val PARAM_CHANNEL_ID_YOUTUBE = "channelId="
+const val PARAM_PLAYLIST_ID_YOUTUBE = "playlistId="
+const val PARAM_VIDEO_ID_YOUTUBE = "id="
+const val PARAM_PART_YOUTUBE = "part="
+const val PARAM_PAGE_TOKEN_YOUTUBE = "pageToken="
+const val PARAM_ORDER_YOUTUBE = "order=date"
+const val PARAM_MAX_RESULT_YOUTUBE = "maxResults="
+const val PARAM_TYPE_YOUTUBE = "type=video"
+const val PARAM_FIELD_SEARCH_YOUTUBE = "fields=nextPageToken," + "pageInfo(totalResults),items(id(videoId),snippet(title,thumbnails,publishedAt))"
+const val PARAM_FIELD_VIDEO_YOUTUBE = "fields=pageInfo(totalResults)," + "items(contentDetails(duration))&"
+const val PARAM_FIELD_PLAYLIST_YOUTUBE = "fields=nextPageToken," + "pageInfo(totalResults),items(snippet(title,thumbnails,publishedAt,resourceId(videoId)))"
+const val PARAM_RESULT_PER_PAGE = 8
+const val ARRAY_PAGE_TOKEN = "nextPageToken"
+const val ARRAY_ITEMS = "items"
+const val OBJECT_ITEMS_ID = "id"
+const val OBJECT_ITEMS_CONTENT_DETAIL = "contentDetails"
+const val OBJECT_ITEMS_SNIPPET = "snippet"
+const val OBJECT_ITEMS_SNIPPET_THUMBNAILS = "thumbnails"
+const val OBJECT_ITEMS_SNIPPET_RESOURCEID = "resourceId"
+const val OBJECT_ITEMS_SNIPPET_THUMBNAILS_MEDIUM = "medium"
+const val KEY_VIDEO_ID = "videoId"
+const val KEY_TITLE = "title"
+const val KEY_PUBLISHEDAT = "publishedAt"
+const val KEY_URL_THUMBNAILS = "url"
+const val KEY_DURATION = "duration"
+const val ARG_TIMEOUT_MS = 4000
+const val TAG_FANDROID = "Fandroid:"
+const val TAG_CHANNEL_ID = "channel_id"
+const val TAG_VIDEO_TYPE = "video_type"

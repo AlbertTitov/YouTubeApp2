@@ -1,11 +1,14 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
+apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 29
+    /*dataBinding {
+        enabled = true
+    }*/
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.newfarm.youtubeapp2"
@@ -14,6 +17,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -21,6 +26,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+ext {
+    retrofitVersion = '2.6.0'
+    gsonVersion = '2.8.5'
+    okHttpVersion = '3.8.1'
 }
 
 dependencies {
@@ -32,4 +43,26 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //retrofit
+    //implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    //implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    //gson
+    //implementation "com.google.code.gson:gson:${gsonVersion}"
+    //okHttp
+    //implementation "com.squareup.okhttp3:okhttp:${okHttpVersion}"
+    //implementation "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
+
+    //Snackbar
+    implementation 'com.github.mrengineer13:snackbar:1.2.0'
+    //MaterialDrawer
+    implementation('com.mikepenz:materialdrawer:4.4.6@aar') { transitive = true }
+    //CircleProgressBar
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    //Ultimate RecyclerView
+    implementation 'com.marshalchen.ultimaterecyclerview:library:0.3.18'
+    //Volley
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    //MaterialPreference
+    implementation 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:5'
 }

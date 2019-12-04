@@ -1,4 +1,4 @@
-package com.newfarm.youtubeapp2.ui.activities
+package com.newfarm.youtubeapp2.presentation.view.activities
 
 import android.content.Intent
 import android.os.Build
@@ -30,6 +30,7 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, HomeActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.open_next, R.anim.close_main)
+            finish()
 
         }, SHOW_LOGO_TIME)
     }
