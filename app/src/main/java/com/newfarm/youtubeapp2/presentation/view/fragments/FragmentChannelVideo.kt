@@ -81,7 +81,7 @@ class FragmentChannelVideo : Fragment(), View.OnClickListener {
         val btnRetry = view.findViewById<AppCompatButton>(R.id.raisedRetry)
         btnRetry.setOnClickListener(this)
 
-        mPrgLoading.setColorSchemeResources(R.color.accent_color)
+        mPrgLoading.setColorSchemeResources(R.color.primary_color)
         mPrgLoading.visibility = View.VISIBLE
 
         mIsAppFirstLaunched = true
@@ -347,7 +347,7 @@ class FragmentChannelVideo : Fragment(), View.OnClickListener {
     private fun haveResultView() {
         mLytRetry.visibility = View.GONE
         mUltimateRecyclerView.visibility = View.VISIBLE
-        mLblNoResult.visibility = View.VISIBLE
+        mLblNoResult.visibility = View.GONE
     }
 
     private fun noResultView() {
@@ -359,7 +359,7 @@ class FragmentChannelVideo : Fragment(), View.OnClickListener {
     private fun disableLoadMore() {
         mIsStillLoading = false
         if (mUltimateRecyclerView.isLoadMoreEnabled) {
-            mUltimateRecyclerView.disableLoadmore()
+            //mUltimateRecyclerView.disableLoadmore()
         }
         mAdapterList?.notifyDataSetChanged()
     }

@@ -30,7 +30,7 @@
             android:ellipsize="end"
             android:singleLine="true"
             android:padding="@dimen/caption_padding"
-            android:background="@color/accent_color"
+            android:background="@color/material_background_color"
             android:layout_gravity="bottom|right"/>
 
     </FrameLayout>

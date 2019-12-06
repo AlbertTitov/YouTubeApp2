@@ -2,16 +2,14 @@
 
     <string name="googleplay_url">https://play.google.com/store/apps/details?id=newfarmstudio.ru</string>
 
-    <string name="app_name">YouTubeApp2</string>
+    <string name="app_name">Канал об Австралии</string>
 
     <string-array name="channel_names">
-        <item>New Video</item>
-        <item>Java for beginners</item>
-        <item>Android Studio</item>
-        <item>Android Design</item>
-        <item>Developer Tools</item>
-        <item>Game Dev</item>
-        <item>Eclipse</item>
+        <item>Главная</item>
+        <item>Жизнь в Австралии</item>
+        <item>Иммиграция в Австралию</item>
+        <item>Путешествия</item>
+        <item>Размышлялки</item>
     </string-array>
 
     <string-array name="video_types">
@@ -25,18 +23,16 @@
     </string-array>
 
     <string-array name="channel_id">
-        <item>UCzE7HcbvyEiS5ea1rVRbPLQ</item>
-        <item>PLyfVjOYzujuj1J2z2CgHw1p4PdDwHuRsd</item>
-        <item>PLyfVjOYzujugap6Rf3ETNKkx4v9ePllNK</item>
-        <item>PLyfVjOYzujugPnav0g4l0GGOPbj_vUf93</item>
-        <item>PLyfVjOYzujugEUT-7gYhONqB5Y1xszpCq</item>
-        <item>PLyfVjOYzujuisikez6McGsBtKviTa_lty</item>
-        <item>PLyfVjOYzujuhLNi-AxZsW0idLj9ZChDf0</item>
+        <item>UC3XcFHWObcBLkfesbE9JaHA</item>
+        <item>PLlZ6lAOthbCGHShf_qzS3X6ohIh9LS0Qh</item>
+        <item>PLlZ6lAOthbCHitB7DT8_ensdQyH36GCOT</item>
+        <item>PLlZ6lAOthbCGHm3X1x_xm_rS79lfZ4Qfx</item>
+        <item>PLlZ6lAOthbCGNe7mzQm0HZhEpGenTQz5g</item>
     </string-array>
 
     <string name="about">О приложении</string>
 
-    <string name="no_result">Видео отсутствует</string>
+    <string name="no_result">Видео отсутствует</string> <!--TODO-->
     <string name="no_internet_connection">Проверьте интернет-соединение</string>
     <string name="response_error">Connection Time Out or Server Under Maintenance</string>
     <string name="error_player">Ошибка инициализации YouTube плеера (%1$s)</string>
@@ -68,7 +64,7 @@
     <string name="pref_rate_review_key">prefRateReviewKey</string>
 
     <string name="pref_app_title">О приложении</string>
-    <string name="pref_app_summary">Видеоуроки по разработке мобильных приложений</string>
+    <string name="pref_app_summary">Канал об иммиграции, обучении и жизни в Австралии</string>
     <string name="pref_version_title">Версия сборки</string>
     <string name="pref_version_summary">1.0</string>
     <string name="pref_developer_title">Разработчик</string>
@@ -82,6 +78,6 @@
     <string name="subject">Рекомендую видеоуроки о создании мобильных приложений на канале Start Android!</string>
     <string name="message">Вы можете скачать приложение "Видеоуроки Start Android" для Android в</string>
 
-    <string name="new_videos">Новые видеоуроки</string>
+    <string name="new_videos">Новые видео</string>
 
 </resources>

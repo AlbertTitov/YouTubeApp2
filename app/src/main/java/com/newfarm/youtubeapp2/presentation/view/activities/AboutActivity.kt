@@ -31,14 +31,14 @@ class AboutActivity : PreferenceActivity(), android.preference.Preference.OnPref
         if (preference?.key == getString(R.string.pref_share_key)) {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.type = "text/plain"
-            shareIntent.putExtra(
+            /*shareIntent.putExtra(
                 Intent.EXTRA_SUBJECT,
                 getString(R.string.subject)
             )
             shareIntent.putExtra(
                 Intent.EXTRA_TEXT, getString(R.string.message) +
                         " " + getString(R.string.googleplay_url)
-            )
+            )*/
             startActivity(Intent.createChooser(shareIntent, getString(R.string.share_to)))
         } else if (preference?.key == getString(R.string.pref_rate_review_key)) {
             val rateReviewIntent = Intent(Intent.ACTION_VIEW)
